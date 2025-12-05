@@ -85,7 +85,7 @@ button {
 .assortment-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 40px;
 }
@@ -109,6 +109,7 @@ button {
     line-height: 1.6;
     font-weight: 400;
     text-align: center;
+    min-height: 44px;
 }
 
 .assortment-price {
