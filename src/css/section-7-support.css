@@ -1,11 +1,3 @@
-.page-support {
-    font-family: Fira Sans;
-    line-height: 1.6;
-    color: #030A06;
-    font-weight: 400;
-    font-size: 16px;
-}
-
 .support-container {
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +5,8 @@
     background-color: #EBF8ED;
     padding: 32px 16px;
     gap: 24px;
+    font-family: Fira Sans;
+    color: #030A06;
 }
 
 .support-form-div {
@@ -47,11 +41,10 @@
 
 .support-input {
     width: 100%;
-    height: 42px;
     border: 1px solid rgba(3, 10, 6, 0.15);
     border-radius: 6px;
     padding: 8px 12px;
-    font-size: 16px;
+    line-height: 1.6;
     background-color: rgba(3, 10, 6, 0.05);
     outline: none;
     transition: border 250ms cubic-bezier(0.4,0,0.2,1);
@@ -59,10 +52,10 @@
 
 .massage-textarea {
     width: 100%;
-    height: 180px;
     border: 1px solid rgba(3, 10, 6, 0.15);
     background-color: rgba(3, 10, 6, 0.05);
     border-radius: 6px;
+    line-height: 1.6;
     padding: 8px 12px;
     resize: none;
     outline: none;
@@ -75,34 +68,35 @@
 
 .massage-textarea:focus::placeholder,
 .support-input:focus::placeholder {
-  color: transparent;
+    color: transparent;
 }
 
 .text-invalid {
-  font-size: 12px;
-  margin-top: 4px;
-  display: none;
-  padding-left: 2px;
-  color: #d64040;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+    padding-left: 2px;
+    color: #d64040;
 }
 
 .support-input:not(:placeholder-shown):invalid,
 .massage-textarea:not(:placeholder-shown):invalid {
-  border-color: #d64040;
-  color: #d64040;
+    border-color: #d64040;
+    color: #d64040;
 }
 
 .support-input:not(:placeholder-shown):invalid ~ .text-invalid {
-  display: block;
+    display: block;
 }
 
 .support-submit-btn {
-    background-color: #030A06;
     border: none;
+    background-color: #030A06;
     color: white;
     border-radius: 6px;
+    line-height: 1.6;
     width: 100%;
-    height: 50px;
+    padding: 12px;
     transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
@@ -143,7 +137,7 @@
     }
 
     .massage-textarea {
-        padding: 12px 12px;
+        padding: 12px;
     }
 
     .support-submit-btn {
@@ -167,7 +161,7 @@
 
 @media screen and (min-width: 1440px) {
     .support-container {
-        padding: 64px 64px;
+        padding: 64px;
     }
 
     .support-header {
