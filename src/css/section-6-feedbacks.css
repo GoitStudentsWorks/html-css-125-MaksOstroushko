@@ -11,6 +11,7 @@
 .feedbacks-h {
     font-family: "Comfortaa", sans-serif;
 
+    max-width: 288px;
     font-weight: 700;
     font-size: 36px;
 
@@ -38,8 +39,8 @@
 
 .feedbacks-stars {
     display: flex;
-    gap: 6px;
-    margin-bottom: 14px;
+    gap: 4px;
+    margin-bottom: 12px;
 }
 
 .feedbacks-svg {
@@ -74,6 +75,10 @@
         background: #ebf8ed;
     }
 
+    .feedbacks-h {
+        max-width: 560px;
+    }
+
    .feedbacks-container {
         gap: 32px 24px;
         display: flex;
@@ -93,6 +98,10 @@
         gap: 24px;
    }
 
+   .feedbacks-stars {
+        margin-bottom: 24px;
+    }
+
    .feedbacks-author {
         display: flex;
         align-items: center;
@@ -109,6 +118,7 @@
 @media screen and (min-width: 1440px) {
     .feedbacks-section {
         padding: 64px;
+        Gap: 80px;
         }
 
     .feedbacks-h {
@@ -125,7 +135,7 @@
         width: calc((100% - 72px) / 4);       
         text-align: left;
         gap: 24px;
-        }
+    }
     
     .feedbacks-author {
         bottom: 64px;
