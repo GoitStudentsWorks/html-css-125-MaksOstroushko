@@ -74,7 +74,10 @@
 
   .gallery-title {
     margin-top: 64px;
-    padding: 32px;
+  }
+
+  .gallery-text {
+    margin-top: 24px;
   }
 
   .gallery-list {
